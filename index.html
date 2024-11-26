@@ -122,6 +122,57 @@ gap: 4vw;
         display: flex;
         gap: 2vw;
     }
+    @media  only screen and (max-width: 1150px) {
+        .cards{
+            display: flex;
+            flex-direction:column;
+            height: 1000px;
+            width: 60vw;
+           
+            align-items: center;
+            
+
+        }
+        main{
+            overflow-y: scroll;
+           height: 70vh;
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            
+            
+            
+        }
+        .align-card:hover{
+        padding: 10px 10px;
+    }
+        ::-webkit-scrollbar{
+            display: none;
+        }
+        .align-card{
+            width: 80vw;
+            
+        }
+        footer{
+            flex-direction: column;
+            height: 20vh;
+            justify-content: center;
+            gap: 10px;
+            
+            
+        }
+        .footer{
+            display:none;
+            
+        }
+        .img-size{
+            width: 200px;
+        }
+        h2{
+            font-size: 2vh;
+        }
+        
+    }
     
 </style>
 <body>
@@ -138,15 +189,15 @@ gap: 4vw;
     <main>
         <div class="cards">
             <div class="card align-card">
-            <img width="75%" src="./Air_chief.jpg" alt="">
+            <img class="img-size" width="75%" src="./Air_chief.jpg" alt="">
             <h2>Air Marshal Amar Preet Singh(CAS)</h2>
         </div>
         <div class="card2 align-card">
-            <img width="35%" src="./Bipin_Rawat.jpg" alt="">
+            <img class="img-size" width="35%" src="./Bipin_Rawat.jpg" alt="">
             <h2>General Bipin Rawat(CDS)</h2>
         </div>
         <div class="card3 align-card">
-            <img width="70%" src="./Admiral.jpg" alt="">
+            <img class="img-size" width="70%" src="./Admiral.jpg" alt="">
             <h2>Admiral Dinesh Tripathi(CNS)</h2>
         </div>
         </div>
