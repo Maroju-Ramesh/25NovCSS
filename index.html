@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+</head>
+<style>
+    html, body{
+        padding: 0;
+        margin: 0;
+    }
+    
+    header{
+        background-color: rgb(27, 27, 27);
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        
+        justify-content: space-between;
+        
+    }
+    main{
+        background-color: rgb(2, 2, 2);
+        width: 100vw;
+        height: 80vh;
+    }
+    
+    footer{
+        background-color: rgb(15, 15, 15);
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+    }
+    .logo{
+border-radius: 200px;
+    }
+    h1{
+        color: linear-gradient(red, blue);
+        color: white;
+        font-size: 3vw;
+        
+
+    }
+    .align{
+        display: flex;
+        align-items: center;
+        gap: 2vw; 
+        padding-left: 3vw;
+
+    }
+    .right-nav{
+
+padding-right: 5vw;
+display: flex;
+align-items: center;
+gap: 4vw;
+    }
+    button:hover{
+        cursor: pointer;
+    }
+    button{
+        background-color: rgb(75, 78, 29);
+        padding: 10px 45px;
+        border-radius: 30px;
+        border: 0;
+        box-shadow: 5px 5px 10px;
+    }
+    .cards{
+       
+        display: flex;
+        gap: 6px;
+        
+    }
+    .align-card:hover{
+        padding: 20px 20px;
+    }
+    .card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card2{
+       flex-grow: 1;
+        background-color: rgb(100, 95, 43);
+        
+    }
+    .align-card{
+        width: 25vw;
+        background-color: rgb(100, 95, 43);
+        height: 70vh;
+        flex-direction: column;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.2s ease-in;
+    }
+    img{
+        border-radius: 20px;
+        
+    }
+    h2{
+        font-size: 2vw;
+        text-align: center;
+    }
+    .leftfooter{
+        padding-left: 3vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 2vw;
+    }
+    .rightfooter{
+        padding-right: 3vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 2vw;
+    }
+    
+</style>
+<body>
+    <header>
+        <div class="align">
+        <img class="logo" width="50vw" height="50vh" src="./logo.png" alt="">
+       <h1>NCC INDIA</h1>
+    </div>
+    <div class="right-nav">
+       <button>Login</button>
+        <img height="50vh" width="35svw" src="./emblem.svg" alt="">
+    </div>
+    </header>
+    <main>
+        <div class="cards">
+            <div class="card align-card">
+            <img width="75%" src="./Air_chief.jpg" alt="">
+            <h2>Air Marshal Amar Preet Singh(CAS)</h2>
+        </div>
+        <div class="card2 align-card">
+            <img width="35%" src="./Bipin_Rawat.jpg" alt="">
+            <h2>General Bipin Rawat(CDS)</h2>
+        </div>
+        <div class="card3 align-card">
+            <img width="70%" src="./Admiral.jpg" alt="">
+            <h2>Admiral Dinesh Tripathi(CNS)</h2>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="leftfooter">
+            <button>Join NCC</button>
+            <button>Our History</button>
+        </div>
+        <h2 class="footer">⚔️Unity and Discipline⚔️ 
+        </h2>
+        <div class="rightfooter">
+            <button>Contact Us</button>
+            <button>FAQ's</button>
+        </div>
+    </footer>
+</body>
+</html>
